@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+        <div>
+            <h1 class="header_text">Do you wanna be friends forever kruthi?🥹</h1>
+            <h2 class="header_text">will you be my side till eternity anam cara?🙄</h2>
+            <h2 class="header_text">Aren't you the cutest cookie?😘</h2>
+        </div>
+        <div class="gif_container">
+            <img src="https://gifdb.com/images/high/anime-boy-upset-vanitas-97ch723zir2vlr5y.gif" alt="cute animated illustration">
+        </div>
+        <div class ="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">YES</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">NO</button>
+            <script>
+                function nextPage(){
+                    window.location.href="yes.html";
+                }
+                function moveButton(){
+                    var x=Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) -85;
+                    var x=Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) -48;
+                    document.getElementById('noButton' ).style.left = `${x}px`;
+                    document.getElementById('noButton' ).style.top = `${y}px`;
+                    
+                    
+                }
+            </script>
+        </div>
+        </div>
+    </body>
+</html>
